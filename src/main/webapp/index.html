@@ -1,0 +1,71 @@
+<!doctype html>
+	<html>
+	<head>
+	<title>Break points with media queries</title>
+	  <style type="text/css">
+	
+	#mainContent
+	{
+	  margin: 40px;
+	}
+	
+	#red, #yellow, #green, #blue
+	{
+	  height: 200px;
+	}
+	#red
+	{
+	  background: red;
+	}
+	#green
+	{
+	  background: green;
+	}
+	#yellow
+	{
+	  background: yellow;
+	}
+	#blue
+	{
+	  background: blue;
+	}
+	
+	@media screen and (max-width:599px) and (min-width:320px)
+	{
+	  #red, #blue, #green, #yellow {
+	    width:50%;
+	    display: inline-block;
+	  }
+	}
+	@media screen and (max-width:767px) and (min-width:600px)
+	{
+	  
+	  #red, #yellow, #green, #blue {
+	    width: 25%;
+	    display: inline-block;
+	    white-space: nowrap;
+	  }
+	
+	}
+	@media screen and (max-width:899px) and (min-width:768px)
+	{
+	  #red, #blue, #green, #yellow {
+	    width:50%;
+	    display: inline-block;
+	  }
+	}
+        @media screen and (max-width:1140px) and (min-width:900px)
+	{
+	  #red, #blue, #green, #yellow {
+	    width:50%;
+	    display: inline-block;
+	  }
+	}
+	  </style>
+	</head>
+	<body>
+	  <div id="mainContent">
+	    <div id="red"></div><div id="green"></div><div id="yellow"></div><div id="blue"></div>
+	  </div>
+	</body>
+	</html>
